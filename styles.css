@@ -1,0 +1,76 @@
+:root {
+  --dark-green: #1e3932;
+  --green: #008248;
+  --pale-green: #d4e9e2;
+  --off-white-green: #f1f8f6;
+  --light-beige: #f3f1e7;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace, sans-serif;
+}
+
+/* Styling */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+
+.logo-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  height: 8rem;
+  display: inline-block;
+}
+
+.main-nav-list,
+.other-nav {
+  font-size: 1.8rem;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.location-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-nav-list a:hover,
+.other-nav a:hover {
+  border-bottom: 0.5rem solid var(--green);
+}
+
+.main-nav-list a:active,
+.other-nav a:active {
+  border-bottom: 0.5rem solid var(--green);
+}
+
+.header-section-breadcrumbs {
+  height: 3rem;
+  background-color: var(--dark-green);
+}
