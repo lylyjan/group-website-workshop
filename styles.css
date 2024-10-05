@@ -1,0 +1,52 @@
+:root {
+  --dark-green: #1e3932;
+  --green: #008248;
+  --pale-green: #d4e9e2;
+  --off-white-green: #f1f8f6;
+  --light-beige: #f3f1e7;
+  --black: #000000;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: monospace, sans-serif;
+}
+
+a {
+  color: #008248;
+}
+
+.container-footer {
+  margin: 30px, 10px;
+  text-align: center;
+  width: 92%;
+}
+
+.footer-upper {
+  margin: 10px, 0;
+  margin-bottom: 20px;
+}
+
+.footer-lower {
+  margin: 10px, 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* Adds space between the items */
+}
+
+.footer-explanation img {
+  width: 13%;
+}
+
+@media (max-width: 768px) {
+  .footer-lower {
+    flex-direction: column; /* Stack items on top of each other */
+  }
+}
