@@ -24,8 +24,8 @@ html {
 @font-face {
   font-family: "SoDo-Sans";
   src: url("/fonts/sodo-sans-regular.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
+  /* font-weight: bold;
+  font-style: italic; */
 }
 
 body {
@@ -44,7 +44,7 @@ body {
 .logo-nav-section {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .logo {
@@ -53,10 +53,22 @@ body {
 
 .main-nav-list,
 .other-nav {
-  font-size: 1.8rem;
   list-style-type: none;
   display: flex;
-  gap: 3rem;
+  gap: 2.4rem;
+}
+
+.other-nav li:first-child {
+  margin-right: 5rem;
+}
+
+.main-nav-list {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.other-nav {
+  font-size: 1.6rem;
 }
 
 .main-nav-link {
@@ -92,4 +104,52 @@ body {
   border: 1px solid var(--black);
   padding: 0.5rem 2rem;
   border-radius: 2.5rem;
+}
+
+.nav-btn-black {
+  color: var(--light-beige);
+  background-color: var(--black);
+}
+
+/* Temporary Media queries for header */
+@media only screen and (max-width: 900px) {
+  .main-nav-list,
+  .other-nav {
+    gap: 1.5rem;
+  }
+
+  .other-nav li:first-child {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .other-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .main-nav-list {
+    gap: 1.2rem;
+    font-size: 1.6rem;
+  }
+  .main-nav-list a {
+    padding-bottom: 4.1rem;
+  }
+  .main-nav-list a:hover,
+  .main-nav-list a:active,
+  .other-nav a:active {
+    border-bottom: 0.5rem solid var(--green);
+    margin-bottom: -0.5rem;
+  }
+  .logo-nav-section {
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .main-nav-list {
+    display: none;
+  }
 }
