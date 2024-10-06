@@ -1,3 +1,4 @@
+/* Colors defined */
 :root {
   --dark-green: #1e3932;
   --green: #008248;
@@ -7,18 +8,29 @@
   --black: #000000;
 }
 
+/* Reset everything */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Set font size to 10px by default. By using this technique it is easier to measure everything */
 html {
   font-size: 62.5%;
 }
 
+/* Font family */
+@font-face {
+  font-family: "SoDo-Sans";
+  src: url("/fonts/sodo-sans-regular.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
 body {
-  font-family: monospace, sans-serif;
+  font-family: "SoDo-Sans", sans-serif;
+  color: var(--black);
 }
 
 /* Styling */
@@ -26,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem;
+  padding: 3rem 3rem 1.5rem;
 }
 
 .logo-nav-section {
@@ -37,14 +49,12 @@ body {
 
 .logo {
   height: 8rem;
-  display: inline-block;
 }
 
 .main-nav-list,
 .other-nav {
   font-size: 1.8rem;
   list-style-type: none;
-  width: 100%;
   display: flex;
   gap: 3rem;
 }
@@ -52,6 +62,7 @@ body {
 .main-nav-link {
   text-decoration: none;
   color: var(--black);
+  position: relative;
 }
 
 .location-link {
@@ -60,17 +71,25 @@ body {
   gap: 1rem;
 }
 
-.main-nav-list a:hover,
-.other-nav a:hover {
-  border-bottom: 0.5rem solid var(--green);
+.main-nav-list a {
+  padding-bottom: 3.9rem;
 }
 
+.main-nav-list a:hover,
 .main-nav-list a:active,
 .other-nav a:active {
   border-bottom: 0.5rem solid var(--green);
+  margin-bottom: -0.5rem;
 }
 
 .header-section-breadcrumbs {
   height: 3rem;
   background-color: var(--dark-green);
+}
+
+/* buttons */
+.btn {
+  border: 1px solid var(--black);
+  padding: 0.5rem 2rem;
+  border-radius: 2.5rem;
 }
