@@ -1,0 +1,334 @@
+/* Colors defined */
+:root {
+  --dark-green: #1e3932;
+  --green: #008248;
+  --pale-green: #d4e9e2;
+  --off-white-green: #f1f8f6;
+  --light-beige: #f3f1e7;
+  --black: #2b2b2b;
+}
+
+/* Reset everything */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font size to 10px by default. By using this technique it is easier to measure everything */
+html {
+  font-size: 62.5%;
+}
+
+/* Font family */
+@font-face {
+  font-family: "SoDo-Sans";
+  src: url("/fonts/sodo-sans-regular.woff") format("woff");
+}
+
+body {
+  font-family: "SoDo-Sans", sans-serif;
+  color: var(--black);
+}
+
+/* Styling */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem 1.5rem;
+}
+
+.logo-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.main-nav-list,
+.other-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.other-nav li:first-child {
+  margin-right: 5rem;
+}
+
+.main-nav-list {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.other-nav {
+  font-size: 1.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: var(--black);
+  position: relative;
+}
+
+.main-nav-link:hover {
+  color: var(--green);
+}
+
+.location-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-nav-list a {
+  padding-bottom: 2.9rem;
+}
+
+/* .main-nav-list a:hover,
+.main-nav-list a:active,
+.other-nav a:active {
+  border-bottom: 0.5rem solid var(--green);
+  margin-bottom: -0.5rem;
+  } */
+
+.main-nav-list a.active {
+  border-bottom: 0.5rem solid var(--green);
+  margin-bottom: -0.5rem;
+}
+
+.header-section-breadcrumbs {
+  height: 50px;
+  background-color: var(--dark-green);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.122), 0 0 2px 0 rgba(0, 0, 0, 0.239);
+  padding-left: 14.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-heading.active {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  top: -0.5rem;
+  position: relative;
+}
+
+/* buttons */
+.btn:link,
+.btn:visited {
+  border: 1px solid var(--black);
+  padding: 0.5rem 2rem;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.btn:hover {
+  background-color: #ebebeb;
+}
+
+.nav-btn-black:link,
+.nav-btn-black:visited {
+  color: var(--light-beige);
+  background-color: var(--black);
+}
+
+.nav-btn-black:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ******************************************** */
+/* Body - First Section START (Michel Palacios) */
+/* ******************************************** */
+.container-fluid {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  overflow: hidden;
+  /* margin-left: 200px; */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  z-index: -1;
+  background-color: var(--pale-green);
+}
+
+.content {
+  max-width: 90%;
+  position: relative;
+  color: black;
+  z-index: 1;
+  padding: 5rem;
+  /* font-family: Arial, sans-serif !important; */
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  max-width: 80%;
+}
+
+.content p {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.join-button {
+  background-color: var(--green);
+  color: var(--light-beige);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.join-button:hover {
+  background-color: #005a37;
+}
+
+.subtext {
+  font-size: 1.8rem;
+}
+
+.subtext a {
+  color: #00754a;
+  text-decoration: none;
+}
+
+.subtext a:hover {
+  text-decoration: underline;
+}
+/* ****************************************** */
+/* Body - First Section END (Michel Palacios) */
+/* ****************************************** */
+
+/* ------------------------------------------ */
+
+/* ****************************************** */
+/* Body - Second Section START (Ly-Ly Janusz) */
+/* ****************************************** */
+.container-footer {
+  height: 50rem;
+  margin: 30px, 10px;
+  text-align: center;
+  width: 92%;
+}
+
+.container-footer {
+  height: auto; /* Allow the height to adjust dynamically */
+  margin: 30px 10px; /* Adjusted margin shorthand */
+  text-align: center;
+  width: 92%;
+  margin-bottom: 1.5rem;
+  padding: 0; /* Remove excessive padding */
+  font-family: "Helvetica Neue", sans-serif;
+  color: var(--black);
+}
+
+.container-footer p {
+  size: 12px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: var(--black);
+}
+
+.footer-upper {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.footer-lower {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+  padding: 0;
+}
+
+.footer-explanation {
+  flex-basis: 30%; /* Each box takes up about 30% of the width so they fit together */
+  text-align: center; 
+}
+
+.footer-explanation img {
+  width: 13%;
+}
+
+@media (max-width: 768px) {
+  .footer-lower {
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center; 
+  }
+
+  .footer-explanation {
+    flex-basis: 100%; /* Full width for each box on mobile */
+    margin-bottom: 20px; 
+  }
+}
+
+.container-footer h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  max-width: 100%; /* Set max-width to 100% to allow full centering */
+  margin-left: auto;
+  margin-right: auto;
+  display: block; 
+}
+
+.container-footer h3 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+}
+
+.footer-description a {
+  color: #00754a;
+  text-decoration: none;
+}
+
+.footer-description a:hover {
+  text-decoration: underline;
+}
+
+/* ****************************************** */
+/* Body - Second Section END (Ly-Ly Janusz) */
+/* ****************************************** */
+
+/* Footer */
+.orig-ftr {
+  padding: 4rem;
+  background-color: var(--pale-green);
+}
+
+.orig-ftr p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
