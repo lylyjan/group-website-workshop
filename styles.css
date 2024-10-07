@@ -231,67 +231,66 @@ body {
 /* ****************************************** */
 /* Body - Second Section START (Ly-Ly Janusz) */
 /* ****************************************** */
+/* Optimized by Umair */
+/* ****************** */
 .container-footer {
-  height: 50rem;
-  margin: 30px, 10px;
+  margin: 4rem auto 12rem;
   text-align: center;
   width: 92%;
+  /* height: 60rem; */
+  /* margin: 0 auto; */
+  /* color: var(--black); */
+  /* margin: 30px, 10px; */
+  /* margin-bottom: 1.5rem; */
+  /* padding: 0; */
 }
 
-.container-footer {
-  height: auto; /* Allow the height to adjust dynamically */
-  margin: 30px 10px; /* Adjusted margin shorthand */
-  text-align: center;
-  width: 92%;
-  margin-bottom: 1.5rem;
-  padding: 0; /* Remove excessive padding */
-  font-family: "Helvetica Neue", sans-serif;
-  color: var(--black);
+.footer-upper p {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  /* size: 12px; */
+  /* font-family: "Helvetica Neue", sans-serif; */
+  /* color: var(--black); */
 }
 
-.container-footer p {
-  size: 12px;
-  font-family: "Helvetica Neue", sans-serif;
-  color: var(--black);
-}
-
-.footer-upper {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
 .footer-lower {
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
-  max-width: 100%;
-  padding: 0;
+  gap: 3rem;
+  /* margin: 0 auto; */
+  /* max-width: 100%;
+  padding: 0; */
 }
 
 .footer-explanation {
-  flex-basis: 30%; /* Each box takes up about 30% of the width so they fit together */
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+  flex-basis: 30%;
+  /* text-align: center; */
 }
 
 .footer-explanation img {
-  width: 13%;
+  width: 5rem;
+  height: 5rem;
 }
-
+/*
 @media (max-width: 768px) {
   .footer-lower {
-    flex-direction: column; /* Stack the boxes vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .footer-explanation {
-    flex-basis: 100%; /* Full width for each box on mobile */
+    flex-basis: 100%;
     margin-bottom: 20px;
   }
-}
+} */
 
 .container-footer h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   font-weight: 600;
   max-width: 100%; /* Set max-width to 100% to allow full centering */
@@ -301,18 +300,25 @@ body {
 }
 
 .container-footer h3 {
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.footer-description a {
-  color: #00754a;
+.footer-explanation p {
+  font-size: 1.6rem;
+}
+
+.footer-explanation a:link,
+.footer-explanation a:visited {
+  color: var(--green);
+  /* text-decoration: none; */
+}
+
+.footer-explanation a:hover,
+.footer-explanation a:active {
   text-decoration: none;
-}
-
-.footer-description a:hover {
-  text-decoration: underline;
 }
 
 /* ****************************************** */
@@ -328,4 +334,8 @@ body {
 .orig-ftr p {
   font-size: 1.2rem;
   text-align: center;
+}
+
+.orig-ftr p span {
+  margin-left: 3rem;
 }
