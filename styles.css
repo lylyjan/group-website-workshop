@@ -146,7 +146,7 @@ body {
 }
 
 .nav-btn-black:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* ******************************************** */
@@ -216,11 +216,11 @@ body {
 
 .subtext a {
   color: #00754a;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .subtext a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* ****************************************** */
 /* Body - First Section END (Michel Palacios) */
