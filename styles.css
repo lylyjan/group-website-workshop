@@ -234,10 +234,11 @@ body {
 /* Optimized by Umair */
 /* ****************** */
 .container-footer {
-  height: 50vh;
-  margin: 8rem auto 12rem;
+  margin: 4rem auto 12rem;
   text-align: center;
   width: 92%;
+  /* height: 60rem; */
+  /* margin: 0 auto; */
   /* color: var(--black); */
   /* margin: 30px, 10px; */
   /* margin-bottom: 1.5rem; */
@@ -252,29 +253,28 @@ body {
   /* color: var(--black); */
 }
 
-.footer-upper {
-  margin-bottom: 2rem;
-  /* margin-top: 0; */
-}
-
 .footer-lower {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   /* margin: 0 auto; */
   /* max-width: 100%;
   padding: 0; */
 }
 
 .footer-explanation {
-  flex-basis: 25%; /* Each box takes up about 25% of the width so they fit together */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   line-height: 1.4;
+  flex-basis: 30%;
   /* text-align: center; */
 }
 
 .footer-explanation img {
-  width: 13%;
+  width: 5rem;
+  height: 5rem;
 }
 /*
 @media (max-width: 768px) {
